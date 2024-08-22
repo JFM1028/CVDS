@@ -1,10 +1,10 @@
 
 # Práctica de Git en Equipo
-# I INTEGRANTES: 
+## I INTEGRANTES: 
 Diego Chicuazuque y Felipe Martinez
 
-# II RESPUESTAS:
-## Owner y Colaborador editan el archivo README.md al mismo tiempo e intentan subir los cambios al mismo tiempo.
+## II RESPUESTAS:
+### Owner y Colaborador editan el archivo README.md al mismo tiempo e intentan subir los cambios al mismo tiempo.
 
 ### ¿Qué sucedió?
 **Situación Inicial**  
@@ -17,14 +17,14 @@ Diego Chicuazuque y Felipe Martinez
 **Cómo lo resolvimos:**  
 -La persona que perdió la _"competencia"_ al intentar hacer el push primero tendrá que hacer un git pull para traer los cambios del repositorio remoto.Durante el pull, Git detectará los conflictos y añadirá marcas como `<<<`, `===`, y `>>>` en el archivo afectado. Estas marcas indican las diferencias entre las versiones del archivo.El colaborador tendrá que resolver estos conflictos manualmente, eligiendo qué líneas de código conservar y cuáles eliminar.
 
-## ¿Hay una mejor forma de trabajar con Git para no tener conflictos?
+### ¿Hay una mejor forma de trabajar con Git para no tener conflictos?
 Sí, usando ramas y Pull Requests, coordinando mejor el trabajo, y asegurando una buena comunicación entre los miembros del equipo.
 
-## ¿Qué es y cómo funciona el Pull Request?
+### ¿Qué es y cómo funciona el Pull Request?
 Es una solicitud para fusionar cambios de una rama a otra. Permite que otros miembros del equipo revisen y aprueben los cambios antes de ser fusionados, ayudando a prevenir errores y conflictos.
 
-# III QUE COMANDOS SE UTILIZARON:
-## Configuración Inicial
+## III QUE COMANDOS SE UTILIZARON:
+### Configuración Inicial
 1. **Clonar un repositorio:**
    ```bash
    git clone <URL-del-repositorio>
@@ -38,7 +38,7 @@ Es una solicitud para fusionar cambios de una rama a otra. Permite que otros mie
    ```
    Configura tu nombre y correo electrónico para que Git asocie los cambios con tu identidad.
 
-## Trabajo con Archivos y Commit
+### Trabajo con Archivos y Commit
 3. **Verificar el estado del repositorio:**
    ```bash
    git status
@@ -61,7 +61,7 @@ Es una solicitud para fusionar cambios de una rama a otra. Permite que otros mie
    ```
    Guarda los cambios en el historial de commits con un mensaje descriptivo.
 
-## Sincronización con el Repositorio Remoto
+### Sincronización con el Repositorio Remoto
 6. **Hacer push de los cambios al repositorio remoto:**
    ```bash
    git push origin <nombre-de-la-rama>
@@ -74,7 +74,7 @@ Es una solicitud para fusionar cambios de una rama a otra. Permite que otros mie
    ```
    Descarga los cambios del repositorio remoto y los fusiona con tu rama local.
 
-## Resolución de Conflictos
+### Resolución de Conflictos
 8. **Resolver conflictos manualmente:**
    - Abre el archivo con conflicto, identifica las secciones marcadas con `<<<`, `===`, y `>>>`, y resuelve el conflicto manteniendo las líneas correctas.
    
@@ -88,7 +88,7 @@ Es una solicitud para fusionar cambios de una rama a otra. Permite que otros mie
    ```
    Realiza un commit para guardar la resolución del conflicto.
 
-## Trabajo con Ramas y Pull Requests
+### Trabajo con Ramas y Pull Requests
 9. **Crear una nueva rama:**
    ```bash
    git checkout -b <nombre-de-la-rama>
@@ -117,7 +117,7 @@ Es una solicitud para fusionar cambios de una rama a otra. Permite que otros mie
     ```
     Elimina una rama remota en GitHub.
 
-## Extra (Si usas IntelliJ para Resolver Conflictos)
+### Extra (Si usas IntelliJ para Resolver Conflictos)
 14. **Resolver conflictos en IntelliJ:**
     - IntelliJ proporciona una interfaz gráfica para resolver conflictos de merge cuando abres el archivo en conflicto o tambien en _VisualStudioCode_ tambien sale .
 
