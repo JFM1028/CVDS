@@ -8,23 +8,22 @@ Diego Chicuazuque y Felipe Martinez
 
 ### ¿Qué sucedió?
 **Situación Inicial**  
-Owner: Es quien crea el repositorio y tiene control total sobre él.  
-Collaborator: Es quien recibe permisos de escritura sobre el repositorio para colaborar.
+-_Owner_: Es quien crea el repositorio y tiene control total sobre él.  
+-_Collaborator_: Es quien recibe permisos de escritura sobre el repositorio para colaborar.
 
 **Escenario de Conflicto:**  
-Owner y Collaborator editamos el archivo README.md al mismo tiempo y ambos intentamos hacer un push de los cambios que cada uno le hicimos.  
-Nos fijamos que Git no permite hacer un push directo si hay cambios en el repositorio remoto que no están sincronizados con tu versión local. Esto causa un conflicto cuando ambas personas intentan subir los cambios simultáneamente.
+-_Owner y Collaborator_ editamos el archivo _README.md_ al mismo tiempo y ambos intentamos hacer un push de los cambios que cada uno le hicimos.Nos fijamos que <u>Git no permite hacer un push directo si hay cambios en el repositorio remoto que no están sincronizados con tu versión local</u>. Esto causa un conflicto cuando ambas personas intentan subir los cambios simultáneamente.
 
 **Cómo lo resolvimos:**  
-La persona que perdió la "competencia" al intentar hacer el push primero tendrá que hacer un git pull para traer los cambios del repositorio remoto.  
-Durante el pull, Git detectará los conflictos y añadirá marcas como `<<<`, `===`, y `>>>` en el archivo afectado. Estas marcas indican las diferencias entre las versiones del archivo.  
-El colaborador tendrá que resolver estos conflictos manualmente, eligiendo qué líneas de código conservar y cuáles eliminar.
+-La persona que perdió la _"competencia"_ al intentar hacer el push primero tendrá que hacer un git pull para traer los cambios del repositorio remoto.Durante el pull, Git detectará los conflictos y añadirá marcas como `<<<`, `===`, y `>>>` en el archivo afectado. Estas marcas indican las diferencias entre las versiones del archivo.El colaborador tendrá que resolver estos conflictos manualmente, eligiendo qué líneas de código conservar y cuáles eliminar.
 
 ## ¿Hay una mejor forma de trabajar con Git para no tener conflictos?
 Sí, usando ramas y Pull Requests, coordinando mejor el trabajo, y asegurando una buena comunicación entre los miembros del equipo.
 
 ## ¿Qué es y cómo funciona el Pull Request?
 Es una solicitud para fusionar cambios de una rama a otra. Permite que otros miembros del equipo revisen y aprueben los cambios antes de ser fusionados, ayudando a prevenir errores y conflictos.
+
+# QUE COMANDOS SE UTILIZARON:
 ## Configuración Inicial
 1. **Clonar un repositorio:**
    ```bash
@@ -120,6 +119,6 @@ Es una solicitud para fusionar cambios de una rama a otra. Permite que otros mie
 
 ## Extra (Si usas IntelliJ para Resolver Conflictos)
 14. **Resolver conflictos en IntelliJ:**
-    - IntelliJ proporciona una interfaz gráfica para resolver conflictos de merge cuando abres el archivo en conflicto.
+    - IntelliJ proporciona una interfaz gráfica para resolver conflictos de merge cuando abres el archivo en conflicto o tambien en _VisualStudioCode_ tambien sale .
 
 
