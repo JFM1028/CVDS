@@ -1,9 +1,9 @@
 
 # Práctica de Git en Equipo
-# INTEGRANTES: 
+# I INTEGRANTES: 
 Diego Chicuazuque y Felipe Martinez
 
-# RESPUESTAS:
+# II RESPUESTAS:
 ## Owner y Colaborador editan el archivo README.md al mismo tiempo e intentan subir los cambios al mismo tiempo.
 
 ### ¿Qué sucedió?
@@ -23,7 +23,7 @@ Sí, usando ramas y Pull Requests, coordinando mejor el trabajo, y asegurando un
 ## ¿Qué es y cómo funciona el Pull Request?
 Es una solicitud para fusionar cambios de una rama a otra. Permite que otros miembros del equipo revisen y aprueben los cambios antes de ser fusionados, ayudando a prevenir errores y conflictos.
 
-# QUE COMANDOS SE UTILIZARON:
+# III QUE COMANDOS SE UTILIZARON:
 ## Configuración Inicial
 1. **Clonar un repositorio:**
    ```bash
